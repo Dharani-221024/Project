@@ -1,0 +1,50 @@
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #1E293B;
+    color:#F8FAFC;
+}
+a{
+    color:#F8FAFC;
+    text-decoration: none;
+}
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+    margin-top:30px;
+}
+.some{
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s;
+    width: 200px;
+    height: 225px;
+}
+body{
+    background-color: #dee9fa;
+
+}
+.bck{
+    background-image: url("img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products{
+    padding: 40px;
+    text-align: center;
+}
+footer{
+    text-align:center;
+    padding:15px;
+    background: rgba(0,0,0,0.5);
+}
+
+button{
+    background:#e9eef0;
+    color:#020617
+}
