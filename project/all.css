@@ -1,9 +1,104 @@
 .navbar{
     display:flex;
     justify-content: space-between;
-    padding: 15px 40px;
-    background-color: #1E293B;
-    color:#F8FAFC;
+    padding: 10px 40px;
+    background: white;
+    color:#1E293B;
+    align-items: center;
+    border-bottom: 1px solid#ddd;
+}
+.links{
+    margin-right: 15px;
+    font-size: 14px;
+}
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:#248ef1
+}
+.logo span{
+    color:#1E293B
+}
+.nav2{
+    background: linear-gradient(120deg, #0f172a, #1e293b, #334155);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links2{
+    display:flex;
+    color:white;
+    gap: 25px;
+    list-style: none;
+}
+.links2 li{
+    cursor:pointer;
+}
+.search{
+    display:flex;
+}
+.search input{
+    padding:6px;
+    border:none;
+    outline: none;
+}
+.search button{
+    background: #248ef1;
+    color:white;
+    border:none;
+    padding:6px 12px;
+}
+.opts{
+    display:flex;
+    background:#eee;
+    padding:15px;
+    justify-content:space-around;
+    font-weight:bold;
+}
+.contain{
+    display:flex;
+    padding: 30px;
+}
+.incontain{
+    background:white;
+    padding:20px;
+    display:flex;
+    width:75%;
+    border-radius: 4px;
+}
+.incontext{
+    width:50%;
+}
+.incontext h1{
+   font-size: 60px;
+   color:#222;
+}
+.incontext h2 span{
+   color:#248ef1;
+}
+.incontext button{
+    margin-top: 20px;
+    padding:12px 20px;
+    background:#248ef1;
+    border:none;
+    color:white;
+    font-size:16px;
+    cursor: pointer;
+}
+.incontext img{
+    width:500px;
+    height:100%;
+    
+}
+.sidebar{
+    width:25%;
+    margin-left: 20px;
+}
+.brand{
+    background: white;
+    padding:15px;
+    margin-bottom: 10px;
+    border-left:4px solid #248ef1;
 }
 a{
     color:#F8FAFC;
