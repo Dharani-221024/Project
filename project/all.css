@@ -34,6 +34,9 @@
 .links2 li{
     cursor:pointer;
 }
+li a{
+    text-decoration: none;
+}
 .search{
     display:flex;
 }
@@ -88,7 +91,6 @@
 .incontext img{
     width:500px;
     height:100%;
-    
 }
 .sidebar{
     width:25%;
@@ -100,7 +102,7 @@
     margin-bottom: 10px;
     border-left:4px solid #248ef1;
 }
-a{
+.a{
     color:#F8FAFC;
     text-decoration: none;
 }

@@ -1,29 +1,31 @@
 <html>
     <head>
+        <title>eLECTRONICS</title>
         <link rel="stylesheet" href="all.css">
     </head>
     <body>
         <div class="navbar">
-                <div class="logo">E<span>LECTRONICS</span></div>
+                <div class="logo">E<span id="head">LECTRONICS</span></div>
                 <div class="links">
-                    <span>Your account</span>
-                    <span>Cart:</span>
+                    <span id="aname">Your account</span>
+                    <button id="account">LogIn</button>
+                    <span>Cart: <span id="cartCount"></span></span>
                     <select>
                         <option>US DOLLAR</option>
                         <option>INR</option>
                     </select>
                 </div>
-        </div>
+            </div>
         <nav class="nav2">
             <ul class="links2">
-                <li>Home</li>
-                <li>Specials</li>
-                <li>Delivery</li>
-                <li>Contacts</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Specials</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Contacts</a></li>
             </ul>
             <div class="search">
-                <input type="text" placeholder="Search.....">
-                <button>Search</button>
+                <input type="text" id="sp" placeholder="Search.....">
+                <button id="bs" >Search</button>
             </div>
         </nav>
         <div class="opts">
@@ -73,25 +75,25 @@
                 <h3>iphone</h3>
                 <img src="iphone.png" width=100px height=100px>
                 <p>₹1,99,999</p>
-                <button>Add to cart</button>
+                <button onclick="cartb()">Add to cart</button>
             </div>
             <div class="some">
                 <h3>Laptop</h3>
                 <img src="laptop.png" width=100px height=100px>
                 <p>₹1,99,999</p>
-                <button>Add to cart</button>
+                <button onclick=cartb()>Add to cart</button>
             </div>
             <div class="some">
                 <h3>Wireless earphones</h3>
                 <img src="earbuds.png" width=100px height="100px">
                 <p>₹1,999</p>
-                <button>Add to cart</button>
+                <button onclick="cartb()">Add to cart</button>
             </div>
             <div class="some">
                 <h3>Watches</h3>
                 <img src="watch.png" width=100px height=100px>
                 <p>₹999</p>
-                <button>Add to cart</button>
+                <button onclick="cartb()">Add to cart</button>
             </div>
             </div>
         </section>
@@ -102,30 +104,31 @@
                 <h3>iphone</h3>
                 <img src="iphone.png" width=100px height=100px>
                 <p>₹1,99,999</p>
-                <button>Add to cart</button>
+                <button onclick="cartb()">Add to cart</button>
             </div>
             <div class="some">
                 <h3>Laptop</h3>
                 <img src="laptop.png" width=100px height=100px>
                 <p>₹1,99,999</p>
-                <button>Add to cart</button>
+                <button onclick="cartb()">Add to cart</button>
             </div>
             <div class="some">
                 <h3>Wireless earphones</h3>
                 <img src="earbuds.png" width=100px height="100px">
                 <p>₹1,999</p>
-                <button>Add to cart</button>
+                <button onclick="cartb()">Add to cart</button>
             </div>
             <div class="some">
                 <h3>Watches</h3>
                 <img src="watch.png" width=100px height=100px>
                 <p>₹999</p>
-                <button>Add to cart</button>
+                <button onclick="cartb()">Add to cart</button>
             </div>
             </div>
         </section>
         <footer>
             <p>@2025 Electronics | Dharani </p>
         </footer>
+        <script src="sc.js"></script>
     </body>
 </html>
