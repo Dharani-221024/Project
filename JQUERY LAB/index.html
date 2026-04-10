@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Lab</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: #34495e;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+<h1>jQuery Explorer Lab</h1>
+
+<div class="container">
+    <a href="selectors.html" class="card">Selectors</a>
+    <a href="attributes.html" class="card">Attributes</a>
+    <a href="events.html" class="card">Events</a>
+    <a href="style.html" class="card">Styles</a>
+    <a href="traversing.html" class="card">Traversing</a>
+    <a href="effects.html" class="card">Effects</a>
+</div>
+
+</body>
+</html>

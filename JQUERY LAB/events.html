@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Events</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1>jQuery Events Demo</h1>
+
+<div class="event-box">
+    <h3>Mouse Events</h3>
+    <button id="clickBtn">Click</button>
+    <button id="dblClickBtn">Double Click</button>
+    <br><br>
+    <img src="interactive_icon.png" id="mouseBox" class="animated-icon" style="cursor: pointer;" alt="Interactive Icon">
+    <p id="mouseStatus">Mouse status: </p>
+    <p id="mouseCoords">Mouse coordinates: X: 0, Y: 0</p>
+    <p id="rightClickStatus">Right click status: None</p>
+</div>
+
+<div class="event-box">
+    <h3>Keyboard Events</h3>
+    <input type="text" id="keyInput" placeholder="Press any key...">
+    <input type="text" id="specialKeyInput" placeholder="Keydown / Keyup...">
+    <p id="keyStatus">Key status: </p>
+</div>
+
+<div class="event-box">
+    <h3>Form Events</h3>
+    <form id="form">
+        <input type="text" id="focusInput" placeholder="Focus / Blur on me">
+        <br><br>
+        <select id="changeSelect">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+        <p id="changeStatus">Change status: </p>
+        <button type="submit">Submit Form</button>
+    </form>
+</div>
+
+<div class="event-box">
+    <h3>The on() Method</h3>
+    <p id="onMethodText">Use on() to attach multiple events to me!</p>
+</div>
+
+</body>
+</html>

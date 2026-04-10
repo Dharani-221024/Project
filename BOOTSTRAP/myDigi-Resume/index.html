@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="70" tabindex="0">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-layers-half text-primary"></i> myDigi-Resume
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="bi bi-list fs-1 text-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown">More</a>
+                        <ul class="dropdown-menu glass-dropdown border-0 shadow-sm">
+                            <li><a class="dropdown-item py-2" href="#gallery"><i
+                                        class="bi bi-images me-2 text-primary"></i> Gallery</a></li>
+                            <li><a class="dropdown-item py-2" href="#interactive"><i
+                                        class="bi bi-magic me-2 text-primary"></i> Interactive</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item py-2" href="#experience"><i
+                                        class="bi bi-briefcase me-2 text-primary"></i> Experience</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0"><a
+                            class="btn btn-primary rounded-pill px-4 shadow-sm w-100" href="#contact"><i
+                                class="bi bi-envelope-paper me-1"></i> Hire Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section (Hero) -->
+    <section id="home" class="hero-section d-flex align-items-center min-vh-100 position-relative overflow-hidden pt-5">
+        <div class="blob-shape shape-1 d-none d-md-block"></div>
+        <div class="blob-shape shape-2"></div>
+        <div class="container position-relative z-1">
+            <div class="row align-items-center g-5 justify-content-center">
+                <div class="col-12 col-md-8 col-lg-5 order-1 order-lg-1 mb-4 mb-lg-0">
+                    <div class="hero-image-wrapper p-4 bg-white rounded-4 shadow-lg mx-auto d-flex justify-content-center align-items-center"
+                        style="max-width: 480px; transform: rotate(-3deg); transition: transform 0.3s ease;">
+                        <img src="images/hero_avatar.png" class="img-fluid rounded-3 w-100 border border-light"
+                            style="transform: rotate(3deg); transition: transform 0.3s ease;" alt="Profile Image">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 order-2 order-lg-2 text-center text-lg-start px-lg-5">
+                    <span
+                        class="badge bg-soft-primary text-primary rounded-pill mb-3 px-4 py-2 fs-6 fw-bold border border-primary-subtle shadow-sm hover-primary"><i
+                            class="bi bi-lightning-charge-fill me-1 text-warning"></i> Code. Coffee. Creativity.</span>
+                    <h1 class="display-3 fw-bold mb-3 text-gradient">Dharani Allu</h1>
+                    <p class="lead text-secondary mb-4 mx-auto mx-lg-0" style="font-size: 1.25rem; line-height: 1.6;">I
+                        turn high-octane caffeine into flawless code and wild ideas into pixel-perfect digital magic.
+                        Whether it's architecting a robust application or making interactive divs dance, I'm your go-to
+                        ninja.</p>
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-4">
+                        <a href="#projects" class="btn btn-primary btn-lg rounded-pill px-5 shadow-sm fw-semibold">View
+                            My Magic</a>
+                        <a href="#contact" class="btn btn-outline-dark btn-lg rounded-pill px-4 fw-semibold"
+                            data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="I speak fluent JavaScript and sarcasm">Summon Me <i
+                                class="bi bi-arrow-down ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold mb-2">About Me</h2>
+                    <div class="heading-line mx-auto"></div>
+                </div>
+            </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <!-- Nested grids -->
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="glass-card p-4 text-center rounded-4 h-100 border border-light">
+                                <i class="bi bi-clock-history fs-1 text-primary mb-3"></i>
+                                <h3 class="fw-bold fs-4 mb-0">5+</h3>
+                                <p class="text-muted mb-0 small">Years Experience</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="glass-card p-4 text-center rounded-4 h-100 border border-light">
+                                <i class="bi bi-check2-circle fs-1 text-success mb-3"></i>
+                                <h3 class="fw-bold fs-4 mb-0">120+</h3>
+                                <p class="text-muted mb-0 small">Projects Done</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="alert alert-secondary glass-alert border-0 rounded-4 p-4 p-lg-5 shadow-sm mb-0"
+                        role="alert">
+                        <h4 class="alert-heading fw-bold mb-3"><i class="bi bi-stars me-2 text-warning"></i> Hey there!
+                        </h4>
+                        <p class="mb-0 text-muted" style="line-height: 1.8;">I am a passionate software engineer focused
+                            on building premium web experiences. I blend technical prowess with a keen eye for design
+                            aesthetics to deliver unique and scalable digital products. Using technologies like
+                            Bootstrap uniquely.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container py-5">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="fw-bold mb-2">My Skills</h2>
+                    <div class="heading-line mx-auto mb-4"></div>
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                        <span
+                            class="badge rounded-pill bg-white text-dark border shadow-sm p-2 px-3 fw-medium">JavaScript</span>
+                        <span
+                            class="badge rounded-pill bg-white text-dark border shadow-sm p-2 px-3 fw-medium">React</span>
+                        <span
+                            class="badge rounded-pill bg-white text-dark border shadow-sm p-2 px-3 fw-medium">Bootstrap
+                            5</span>
+                        <span
+                            class="badge rounded-pill bg-white text-dark border shadow-sm p-2 px-3 fw-medium">Node.js</span>
+                        <span
+                            class="badge rounded-pill bg-white text-dark border shadow-sm p-2 px-3 fw-medium">UI/UX</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h4 class="mb-4 fw-semibold text-primary"><i class="bi bi-laptop me-2"></i> Frontend</h4>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-medium text-dark">HTML & CSS</span>
+                            <span class="text-muted small">95%</span>
+                        </div>
+                        <div class="progress rounded-pill shadow-sm bg-light" style="height: 10px;">
+                            <div class="progress-bar custom-bg-primary rounded-pill progress-bar-striped progress-bar-animated"
+                                role="progressbar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-medium text-dark">JavaScript</span>
+                            <span class="text-muted small">90%</span>
+                        </div>
+                        <div class="progress rounded-pill shadow-sm bg-light" style="height: 10px;">
+                            <div class="progress-bar custom-bg-primary rounded-pill" role="progressbar"
+                                style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-4 fw-semibold text-primary"><i class="bi bi-server me-2"></i> Design & Backend</h4>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-medium text-dark">UI/UX Design</span>
+                            <span class="text-muted small">85%</span>
+                        </div>
+                        <div class="progress rounded-pill shadow-sm bg-light" style="height: 10px;">
+                            <div class="progress-bar custom-bg-secondary rounded-pill" role="progressbar"
+                                style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-medium text-dark">Node.js</span>
+                            <span class="text-muted small">80%</span>
+                        </div>
+                        <div class="progress rounded-pill shadow-sm bg-light" style="height: 10px;">
+                            <div class="progress-bar bg-dark rounded-pill" role="progressbar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row align-items-end mb-5">
+                <div class="col-md-6 text-center text-md-start">
+                    <h2 class="fw-bold mb-2">Featured Projects</h2>
+                    <div class="heading-line mx-auto mx-md-0"></div>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-4 mt-md-0">
+                    <button class="btn btn-outline-dark rounded-pill px-4">View All Works <i
+                            class="bi bi-arrow-right ms-1"></i></button>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm project-card rounded-4 overflow-hidden bg-light">
+                        <div class="p-3 pb-0">
+                            <img src="images/project_one.png"
+                                class="card-img-top img-fluid project-img rounded-3 shadow-sm" alt="Project 1">
+                        </div>
+                        <div class="card-body p-4 text-center text-md-start">
+                            <span class="badge bg-soft-primary text-primary mb-3 px-2 py-1 rounded-pill">Dashboard
+                                UI</span>
+                            <h5 class="card-title fw-bold mb-2">Analytics Pro</h5>
+                            <p class="card-text text-muted small mb-4">A modern dashboard interface with custom
+                                glassmorphism components and data visualization.</p>
+                            <button type="button"
+                                class="btn btn-link text-decoration-none p-0 fw-semibold text-primary view-project-btn w-100 text-md-start"
+                                data-bs-toggle="modal" data-bs-target="#projectModal" data-title="Analytics Pro"
+                                data-img="images/project_one.png">
+                                View Details <i class="bi bi-arrow-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm project-card rounded-4 overflow-hidden bg-light">
+                        <div class="p-3 pb-0">
+                            <img src="images/project_two.png"
+                                class="card-img-top img-fluid project-img rounded-3 shadow-sm" alt="Project 2">
+                        </div>
+                        <div class="card-body p-4 text-center text-md-start">
+                            <span class="badge bg-soft-warning text-warning mb-3 px-2 py-1 rounded-pill">Mobile
+                                App</span>
+                            <h5 class="card-title fw-bold mb-2">LifeBalance</h5>
+                            <p class="card-text text-muted small mb-4">Minimalist finance and wellness mobile
+                                application UI, prioritizing user peace of mind.</p>
+                            <button type="button"
+                                class="btn btn-link text-decoration-none p-0 fw-semibold text-primary view-project-btn w-100 text-md-start"
+                                data-bs-toggle="modal" data-bs-target="#projectModal" data-title="LifeBalance"
+                                data-img="images/project_two.png">
+                                View Details <i class="bi bi-arrow-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-12 col-md-6 col-lg-4 offset-md-3 offset-lg-0 mt-4 mt-lg-0">
+                    <div class="card h-100 border-0 shadow-sm project-card rounded-4 overflow-hidden bg-light">
+                        <div class="p-3 pb-0">
+                            <img src="images/project_one.png"
+                                class="card-img-top img-fluid project-img img-thumbnail border-0 bg-transparent rounded-3 shadow-sm"
+                                alt="Project 3">
+                        </div>
+                        <div class="card-body p-4 text-center text-md-start">
+                            <span class="badge bg-soft-success text-success mb-3 px-2 py-1 rounded-pill">Web App</span>
+                            <h5 class="card-title fw-bold mb-2">E-Commerce Plus</h5>
+                            <p class="card-text text-muted small mb-4">Scalable shopping platform with advanced
+                                Filtering and an optimized checkout experience.</p>
+                            <button type="button"
+                                class="btn btn-link text-decoration-none p-0 fw-semibold text-primary view-project-btn w-100 text-md-start"
+                                data-bs-toggle="modal" data-bs-target="#projectModal" data-title="E-Commerce Plus"
+                                data-img="images/project_one.png">
+                                View Details <i class="bi bi-arrow-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Experience -->
+    <section id="experience" class="py-5 position-relative">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-4 d-flex align-items-center"><i
+                            class="bi bi-briefcase text-primary me-2 shadow-sm p-2 rounded bg-white"></i> Experience
+                    </h3>
+                    <div class="list-group list-group-flush rounded-4 overflow-hidden shadow-sm border border-light">
+                        <div class="list-group-item p-4 bg-white border-bottom">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="fw-bold mb-0">Senior UX/UI Designer</h5>
+                                <span class="badge bg-light text-dark border">2021 - Present</span>
+                            </div>
+                            <p class="text-primary mb-2 fw-medium small">Creative Studio</p>
+                            <p class="text-muted small mb-0">Leading the design team to create modern web interfaces and
+                                mobile applications utilizing Bootstrap 5.</p>
+                        </div>
+                        <div class="list-group-item p-4 bg-white">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="fw-bold mb-0">Frontend Developer</h5>
+                                <span class="badge bg-light text-dark border">2018 - 2021</span>
+                            </div>
+                            <p class="text-primary mb-2 fw-medium small">Tech Solutions Inc</p>
+                            <p class="text-muted small mb-0">Developed scalable SPAs using React, Redux, and custom CSS
+                                frameworks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-4 d-flex align-items-center"><i
+                            class="bi bi-mortarboard text-primary me-2 shadow-sm p-2 rounded bg-white"></i> Education
+                    </h3>
+                    <div class="table-responsive rounded-4 shadow-sm bg-white p-2 border border-light">
+                        <table class="table table-hover table-borderless align-middle mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col" class="py-3 px-4 rounded-start text-muted fw-semibold">Year</th>
+                                    <th scope="col" class="py-3 text-muted fw-semibold">Degree</th>
+                                    <th scope="col" class="py-3 px-4 rounded-end text-end text-muted fw-semibold">
+                                        Institution</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="py-3 px-4 fw-medium text-dark small">2014 - 2018</td>
+                                    <td class="py-3 fw-bold text-primary">B.Sc. Computer Science</td>
+                                    <td class="py-3 px-4 text-end text-muted small">University of Tech</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 fw-medium text-dark small">2012 - 2014</td>
+                                    <td class="py-3 fw-bold text-primary">High School Diploma</td>
+                                    <td class="py-3 px-4 text-end text-muted small">City Academy</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery (Carousel) & Interactive -->
+    <section id="gallery" class="py-5 bg-white">
+        <div class="container-fluid px-4 px-lg-5 py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 px-xl-5">
+                    <h2 class="fw-bold mb-3 d-flex align-items-center"><i
+                            class="bi bi-images text-primary me-2 shadow-sm p-2 rounded"></i> Visual Gallery</h2>
+                    <p class="text-muted mb-5">Swipe through some of the premium visual materials and design assets
+                        produced for our top tier clients.</p>
+                    <div id="portfolioCarousel"
+                        class="carousel slide carousel-fade shadow-lg rounded-4 overflow-hidden border border-light"
+                        data-bs-ride="carousel">
+                        <div class="carousel-indicators mb-3">
+                            <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0"
+                                class="active rounded-circle" style="width:10px; height:10px;"></button>
+                            <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1"
+                                class="rounded-circle" style="width:10px; height:10px;"></button>
+                        </div>
+                        <div class="carousel-inner bg-light">
+                            <div class="carousel-item active p-4 pb-0">
+                                <img src="images/project_one.png" class="d-block w-100 rounded-top shadow-sm"
+                                    alt="Gallery 1">
+                                <div
+                                    class="carousel-caption d-none d-md-block glass-card rounded-4 p-3 mb-4 mx-auto w-75">
+                                    <h5 class="fw-bold text-dark mb-0">Dashboard Interface</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item p-4 pb-0">
+                                <img src="images/project_two.png" class="d-block w-100 rounded-top shadow-sm"
+                                    alt="Gallery 2">
+                                <div
+                                    class="carousel-caption d-none d-md-block glass-card rounded-4 p-3 mb-4 mx-auto w-75">
+                                    <h5 class="fw-bold text-dark mb-0">Mobile App UI</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-white text-dark rounded-circle p-3 shadow-sm"
+                                aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-white text-dark rounded-circle p-3 shadow-sm"
+                                aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-xl-5" id="interactive">
+                    <h2 class="fw-bold mb-3 d-flex align-items-center"><i
+                            class="bi bi-question-circle text-primary me-2 shadow-sm p-2 rounded"></i> FAQs</h2>
+                    <p class="text-muted mb-5">Curious about how I work? Click to expand.</p>
+                    <div class="accordion custom-accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed bg-white text-dark" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    What is your typical design process?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted bg-light">
+                                    We start with wireframing and user research, move to high-fidelity mocks, and
+                                    finally implement using clean, modern frameworks like Bootstrap.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold collapsed bg-white text-dark" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    Do you use purely Vanilla CSS?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted bg-light">
+                                    I rely heavily on Bootstrap's utility classes and grid system to ensure robustness,
+                                    but layer on custom CSS to achieve the unique "premium" glassmorphic feel you see
+                                    here.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- jQuery Required Feature -->
+                    <div
+                        class="mt-5 p-4 p-md-5 border-0 rounded-4 bg-white shadow-sm interactive-box position-relative overflow-hidden text-center text-md-start">
+                        <div class="position-absolute end-0 top-0 p-3 opacity-25 d-none d-md-block">
+                            <i class="bi bi-code-slash" style="font-size: 4rem;"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">jQuery Magic ✨</h5>
+                        <p class="text-muted small mb-3">Hover over this box or click the button below to see jQuery in
+                            action.</p>
+                        <button class="btn btn-sm btn-dark rounded-pill px-4 shadow-sm" id="magicBtn">Toggle Secret
+                            Message</button>
+                        <div id="secretMessage"
+                            class="mt-4 p-3 bg-soft-primary rounded-3 text-primary fw-medium border border-primary-subtle"
+                            style="display:none;">
+                            <i class="bi bi-info-circle me-2"></i> You found the hidden Bootstrap & jQuery integration
+                            section!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Form) -->
+    <section id="contact" class="py-5 position-relative">
+        <div class="blob-shape shape-1" style="background-color: #ffecd2; top: -50%; left: -10%;"></div>
+        <div class="container py-5 position-relative z-1">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8 text-center">
+                    <h2 class="fw-bold mb-2">Get In Touch</h2>
+                    <div class="heading-line mx-auto mb-4"></div>
+                    <p class="text-muted">Have a project in mind? Fill out the form below. Validation included.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="glass-card p-4 p-md-5 rounded-4 shadow-lg border border-white">
+                        <form id="contactForm" class="needs-validation" novalidate>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label for="inputName" class="form-label fw-medium small text-muted">Full
+                                        Name</label>
+                                    <div class="input-group has-validation">
+                                        <span class="input-group-text bg-white border-end-0 text-primary"><i
+                                                class="bi bi-person"></i></span>
+                                        <input type="text" class="form-control bg-white border-start-0 ps-0"
+                                            id="inputName" required>
+                                        <div class="invalid-feedback">Please provide your name.</div>
+                                        <div class="valid-feedback">Looks good!</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputEmail" class="form-label fw-medium small text-muted">Email
+                                        Address</label>
+                                    <div class="input-group has-validation">
+                                        <span class="input-group-text bg-white border-end-0 text-primary"><i
+                                                class="bi bi-envelope"></i></span>
+                                        <input type="email" class="form-control bg-white border-start-0 ps-0"
+                                            id="inputEmail" required>
+                                        <div class="invalid-feedback">A valid email is required.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputSubject" class="form-label fw-medium small text-muted">Subject
+                                        Query</label>
+                                    <select class="form-select bg-white" id="inputSubject" required>
+                                        <option value="" selected disabled>Choose a topic...</option>
+                                        <option value="1">Web Development</option>
+                                        <option value="2">UI/UX Design</option>
+                                        <option value="3">Consulting</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select a subject.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-medium small text-muted">Urgency Level (Radio)</label>
+                                    <div class="d-flex gap-4 mt-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input border-secondary" type="radio"
+                                                name="urgencyRadio" id="urgencyLow" value="low" required>
+                                            <label class="form-check-label text-dark" for="urgencyLow">Normal</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input border-secondary" type="radio"
+                                                name="urgencyRadio" id="urgencyHigh" value="high" required>
+                                            <label class="form-check-label text-dark" for="urgencyHigh">Urgent</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="inputPassword" class="form-label fw-medium small text-muted">Private
+                                        Access Code (Password)</label>
+                                    <input type="password" class="form-control bg-white" id="inputPassword"
+                                        placeholder="For existing clients only (optional)">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputMessage" class="form-label fw-medium small text-muted">Message
+                                        Details (Textarea)</label>
+                                    <textarea class="form-control bg-white" id="inputMessage" rows="4"
+                                        placeholder="Tell me about your amazing project..." required></textarea>
+                                    <div class="invalid-feedback">Message cannot be empty.</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input border-secondary" type="checkbox" id="termsCheck"
+                                            required>
+                                        <label class="form-check-label text-muted small" for="termsCheck">
+                                            I agree to the terms of engagement and data policy.
+                                        </label>
+                                        <div class="invalid-feedback">You must agree before submitting.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4 text-center">
+                                    <button class="btn btn-primary btn-lg rounded-pill px-5 shadow-sm" type="submit"
+                                        id="submitBtn" tabindex="0" data-bs-toggle="popover"
+                                        data-bs-trigger="hover focus"
+                                        data-bs-content="Form will be validated via standard Bootstrap/jQuery."
+                                        data-bs-placement="top">
+                                        Send Message <i class="bi bi-send ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-white border-top">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="#"
+                    class="text-dark bg-light rounded-circle shadow-sm hover-primary d-flex align-items-center justify-content-center"
+                    style="width: 45px; height: 45px;"><i class="bi bi-github fs-5"></i></a>
+                <a href="#"
+                    class="text-dark bg-light rounded-circle shadow-sm hover-primary d-flex align-items-center justify-content-center"
+                    style="width: 45px; height: 45px;"><i class="bi bi-linkedin fs-5"></i></a>
+                <a href="#"
+                    class="text-dark bg-light rounded-circle shadow-sm hover-primary d-flex align-items-center justify-content-center"
+                    style="width: 45px; height: 45px;"><i class="bi bi-twitter-x fs-5"></i></a>
+            </div>
+            <p class="text-muted small mb-0 fw-medium">&copy; 2026 myDigi-Resume. Crafted with <i
+                    class="bi bi-heart-fill text-danger mx-1"></i> & Bootstrap.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4 border-0 shadow-lg bg-white">
+                <div class="modal-header border-0 pb-0 px-4 pt-4">
+                    <h5 class="modal-title fw-bold fs-4" id="modalTitle">Project Title</h5>
+                    <button type="button" class="btn-close bg-light rounded-circle p-2 shadow-sm"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 py-4">
+                    <img src="" id="modalImg" class="img-fluid rounded-4 mb-4 w-100 shadow-sm border border-light"
+                        alt="Project Display">
+                    <p class="text-muted mb-0 lead fs-6" id="modalDesc">Detailed description of this project will be
+                        dynamically loaded here via jQuery.</p>
+                </div>
+                <div class="modal-footer border-0 pt-0 px-4 pb-4">
+                    <button type="button" class="btn btn-light rounded-pill px-4 fw-medium"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary rounded-pill px-4 shadow-sm">View Live Demo <i
+                            class="bi bi-box-arrow-up-right ms-1"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (Required by instructions) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS Bundle (Includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
